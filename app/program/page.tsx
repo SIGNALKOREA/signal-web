@@ -65,7 +65,7 @@ export default function ProgramPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900">검증된 인프라</h4>
-                    <p className="text-sm text-gray-500 font-light mt-1">국내 주요 대학 기숙사 제공 및 현장 통솔 전문가 배치</p>
+                    <p className="text-sm text-gray-500 font-light mt-1">기관의 예산과 요구에 맞춘 최적의 숙소 수배 및 현장 통솔 전문가 배치</p>
                   </div>
                 </div>
               </div>
@@ -188,22 +188,24 @@ export default function ProgramPage() {
 
       </main>
 
-      {/* 4. 초대형 맞춤 기획 CTA */}
-      <section className="max-w-6xl mx-auto px-6 mt-24">
-        <div className="bg-white rounded-[2.5rem] p-12 md:p-16 border border-gray-200 flex flex-col md:flex-row items-center justify-between shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative overflow-hidden">
-          <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-blue-50 rounded-full blur-3xl opacity-70 -z-10"></div>
-          
-          <div className="md:w-2/3 mb-8 md:mb-0">
-            <h3 className="text-3xl md:text-4xl font-black text-slate-900 mb-4 tracking-tight">기관 맞춤형 프로그램 기획이 필요하신가요?</h3>
-            <p className="text-gray-500 font-light text-lg break-keep leading-relaxed">
-              참여 인원, 원하는 기간, 가용 예산을 남겨주세요. <br className="hidden md:block"/> 대학 어학당 실무 경력을 갖춘 시그널의 교육 전문가가 최적의 커리큘럼안을 24시간 내에 제안해 드립니다.
-            </p>
+     {/* 4. 초대형 맞춤 기획 CTA */}
+        <section className="max-w-6xl mx-auto px-6 mt-24">
+          <div className="bg-white rounded-[2.5rem] p-12 md:p-16 border border-gray-200 flex flex-col md:flex-row items-center justify-between shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative overflow-hidden">
+            <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-blue-50 rounded-full blur-3xl opacity-70 -z-10"></div>
+            
+            <div className="md:w-2/3 mb-8 md:mb-0">
+              <h3 className="text-3xl md:text-4xl font-black text-slate-900 mb-4 tracking-tight">기관 맞춤형 프로그램 기획이 필요하신가요?</h3>
+              
+              {/* 수정됨: '대학 어학당 실무 경력을 갖춘' -> '다년간의 대학 어학당 실무 경험을 갖춘' 으로 통일성 부여 */}
+              <p className="text-gray-500 font-light text-lg break-keep leading-relaxed">
+                참여 인원, 원하는 기간, 가용 예산을 남겨주세요. <br className="hidden md:block"/> 다년간의 대학 어학당 실무 경험을 갖춘 시그널의 교육 전문가가 최적의 커리큘럼안을 24시간 내에 제안해 드립니다.
+              </p>
+            </div>
+            <button className="w-full md:w-auto px-10 py-5 bg-slate-900 text-white font-bold rounded-2xl text-lg hover:bg-slate-800 hover:-translate-y-1 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.12)] whitespace-nowrap">
+              프로그램 제안서 요청
+            </button>
           </div>
-          <button className="w-full md:w-auto px-10 py-5 bg-slate-900 text-white font-bold rounded-2xl text-lg hover:bg-slate-800 hover:-translate-y-1 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.12)] whitespace-nowrap">
-            프로그램 제안서 요청
-          </button>
-        </div>
-      </section>
+        </section>
 
     </div>
   );

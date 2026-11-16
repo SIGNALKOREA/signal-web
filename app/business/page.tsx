@@ -21,12 +21,10 @@ export default function BusinessPage() {
         </div>
       </section>
 
-      {/* 2. 대형 프로덕트 카드 형태의 사업 영역 소개 */}
       <main className="max-w-6xl mx-auto px-6 -mt-10 relative z-20 space-y-12">
         
-        {/* Business 1: 유학원 운영 및 대학 연계 (가장 핵심이므로 가장 크게) */}
+        {/* Business 1: 유학원 운영 및 대학 연계 */}
         <section className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col md:flex-row items-center gap-12 group hover:shadow-[0_20px_40px_rgb(0,0,0,0.06)] transition-all duration-500 overflow-hidden relative">
-          {/* 장식용 은은한 배경 글로우 */}
           <div className="absolute top-0 left-0 w-[30rem] h-[30rem] bg-blue-50 rounded-full blur-3xl opacity-50 -z-10 group-hover:bg-blue-100 transition-colors duration-700"></div>
           
           <div className="md:w-1/2 relative z-10">
@@ -37,7 +35,7 @@ export default function BusinessPage() {
               유학원 운영 및 <br/>대학 진학 다이렉트 연계
             </h2>
             <p className="text-gray-500 font-light text-lg leading-relaxed break-keep mb-8">
-              해외 현지 기관의 학생들을 한국 주요 대학 어학당 및 학부로 안전하게 연계합니다. 대학 국제교육원 실무 경험을 바탕으로 까다로운 비자(D-4, D-2) 서류부터 입학 행정까지 완벽하게 대행합니다.
+              해외 현지 기관의 학생들을 한국 주요 대학 어학당 및 학부로 안전하게 연계합니다. 어학당 주임강사 등 다년간의 대학 국제교육원 현장 실무 경험을 바탕으로, 까다로운 비자(D-4, D-2) 서류 검토부터 입학 행정 전반을 완벽하고 매끄럽게 대행합니다.
             </p>
             <ul className="space-y-4 text-slate-700 font-medium text-sm md:text-base">
               <li className="flex items-center"><div className="w-2 h-2 bg-blue-600 rounded-full mr-4 shadow-sm"></div>국내 주요 4년제 대학 MOU 기반 입학 연계</li>
@@ -46,10 +44,16 @@ export default function BusinessPage() {
             </ul>
           </div>
           
-          <div className="md:w-1/2 w-full aspect-[4/3] rounded-[2rem] bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center shadow-lg border border-gray-100 group-hover:-translate-y-2 transition-transform duration-500"></div>
+          {/* 이미지가 없을 땐 bg-slate-200(연한 회색) 박스로 보이게 처리 */}
+          <div 
+            className="md:w-1/2 w-full aspect-[4/3] rounded-[2rem] bg-slate-200 bg-cover bg-center shadow-lg border border-gray-100 group-hover:-translate-y-2 transition-transform duration-500 flex items-center justify-center text-slate-400 font-bold"
+            style={{ backgroundImage: "url('/business-1.jpg')" }}
+          >
+            
+          </div>
         </section>
 
-        {/* Business 2: 단기 프로그램 (다크 모드로 시각적 대비) */}
+        {/* Business 2: 단기 프로그램 (다크 모드) */}
         <section className="bg-slate-900 rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex flex-col md:flex-row-reverse items-center gap-12 group hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] transition-all duration-500 overflow-hidden relative">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-950 -z-10"></div>
           
@@ -70,29 +74,40 @@ export default function BusinessPage() {
             </ul>
           </div>
           
-          <div className="md:w-1/2 w-full aspect-[4/3] rounded-[2rem] bg-[url('https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center shadow-2xl group-hover:-translate-y-2 transition-transform duration-500"></div>
+          {/* 다크 모드에 맞춰 어두운 빈 박스(bg-slate-800)로 표시 */}
+          <div 
+            className="md:w-1/2 w-full aspect-[4/3] rounded-[2rem] bg-slate-800 bg-cover bg-center shadow-2xl group-hover:-translate-y-2 transition-transform duration-500 flex items-center justify-center text-slate-600 font-bold"
+            style={{ backgroundImage: "url('/business-2.jpg')" }}
+          >
+            
+          </div>
         </section>
 
-        {/* Business 3: 에듀테크 솔루션 (클린 화이트) */}
+        {/* Business 3: 에듀테크 솔루션 */}
         <section className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col md:flex-row items-center gap-12 group hover:shadow-[0_20px_40px_rgb(0,0,0,0.06)] transition-all duration-500 overflow-hidden relative">
           <div className="md:w-1/2 relative z-10">
             <div className="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
             </div>
             <h2 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 tracking-tight leading-[1.2]">
-              EdTech 기반 <br/>TOPIK 학습 솔루션
+              EdTech 웹 기반 <br/>TOPIK 학습 솔루션
             </h2>
             <p className="text-gray-500 font-light text-lg leading-relaxed break-keep mb-8">
-              시그널은 오프라인 행정에 머물지 않고 IT 역량을 결합합니다. 유학생들의 필수 관문인 TOPIK 단기 고득점을 위해, 자체 개발한 모바일 학습 앱과 학생 관리 대시보드를 파트너 기관에 솔루션으로 제공합니다.
+              시그널은 오프라인 행정에 머물지 않고 IT 역량을 결합합니다. 유학생들의 필수 관문인 TOPIK 단기 고득점을 위해, 자체 개발한 모바일 학습 웹과 학생 관리 대시보드 및 수업 관련 웹을 솔루션으로 제공 가능합니다.
             </p>
             <ul className="space-y-4 text-slate-700 font-medium text-sm md:text-base">
-              <li className="flex items-center"><div className="w-2 h-2 bg-indigo-600 rounded-full mr-4 shadow-sm"></div>모바일(Flutter 기반) TOPIK 기출 모의고사 시스템</li>
-              <li className="flex items-center"><div className="w-2 h-2 bg-indigo-600 rounded-full mr-4 shadow-sm"></div>제휴 기관 관리자용 학생 성적 대시보드(LMS) 제공</li>
-              <li className="flex items-center"><div className="w-2 h-2 bg-indigo-600 rounded-full mr-4 shadow-sm"></div>약점 유형 분석 및 맞춤형 오답 노트 자동 생성</li>
+              <li className="flex items-center"><div className="w-2 h-2 bg-indigo-600 rounded-full mr-4 shadow-sm"></div>모바일(웹 기반) TOPIK 기출 모의고사 프로그램</li>
+              <li className="flex items-center"><div className="w-2 h-2 bg-indigo-600 rounded-full mr-4 shadow-sm"></div>기관 관리자용 성적 및 출석 프로그램</li>
+              <li className="flex items-center"><div className="w-2 h-2 bg-indigo-600 rounded-full mr-4 shadow-sm"></div>수업 관련 프로그램</li>
             </ul>
           </div>
           
-          <div className="md:w-1/2 w-full aspect-[4/3] rounded-[2rem] bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center shadow-lg border border-gray-100 group-hover:-translate-y-2 transition-transform duration-500"></div>
+          <div 
+            className="md:w-1/2 w-full aspect-[4/3] rounded-[2rem] bg-slate-200 bg-cover bg-center shadow-lg border border-gray-100 group-hover:-translate-y-2 transition-transform duration-500 flex items-center justify-center text-slate-400 font-bold"
+            style={{ backgroundImage: "url('/business-3.jpg')" }}
+          >
+            
+          </div>
         </section>
 
       </main>

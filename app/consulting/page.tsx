@@ -27,8 +27,9 @@ export default function ConsultingPage() {
         <section>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-4">왜 SIGNAL.KOREA 인가?</h2>
+            {/* 수정됨: '대학 국제처 실무 경험' -> '다년간의 대학 어학당 및 국제처 현장 실무 경험' */}
             <p className="text-gray-500 font-light text-lg max-w-2xl mx-auto break-keep">
-              대학 국제처 실무 경험을 바탕으로 구축한 압도적인 3대 경쟁력
+              다년간의 대학 어학당 및 국제처 현장 실무 경험을 바탕으로 구축한 압도적인 3대 경쟁력
             </p>
           </div>
           
