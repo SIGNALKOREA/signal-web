@@ -11,9 +11,11 @@ export default function ProgramPage() {
           <span className="text-indigo-400 font-bold tracking-widest text-xs md:text-sm uppercase mb-4 block">
             Premium Curriculum
           </span>
-          <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-[1.1] mb-6 drop-shadow-lg">
-            글로벌 파트너를 위한 <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400">최상위 교육 프로그램</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tighter leading-[1.3] md:leading-[1.1] mb-6 drop-shadow-lg break-keep">
+            <span className="block">글로벌 파트너를 위한</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400 mt-2 md:mt-4">
+              최상위 교육 프로그램
+            </span>
           </h1>
           <p className="text-slate-300 font-light text-lg md:text-xl max-w-2xl mx-auto break-keep leading-relaxed">
             기관의 니즈에 맞춘 100% 맞춤형 단기 연수부터 대학 진학 연계 정규 과정까지, 체계적인 K-에듀 커리큘럼을 제공합니다.

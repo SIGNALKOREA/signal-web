@@ -11,9 +11,12 @@ export default function BusinessPage() {
           <span className="text-blue-400 font-bold tracking-widest text-xs md:text-sm uppercase mb-4 block">
             Core Business Areas
           </span>
-          <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-[1.1] mb-6 drop-shadow-lg">
-            글로벌 교육 기관을 위한 <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400">통합 유학 솔루션</span>
+          {/* 변경됨: 모바일에서는 block을 통해 '통합 유학 솔루션'이 무조건 한 줄을 다 차지하도록 분리 */}
+         <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tighter leading-[1.3] md:leading-[1.1] mb-6 drop-shadow-lg break-keep">
+            <span className="block">글로벌 교육 기관을 위한</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400 mt-2 md:mt-4">
+              통합 유학 솔루션
+            </span>
           </h1>
           <p className="text-slate-300 font-light text-lg md:text-xl max-w-2xl mx-auto break-keep leading-relaxed">
             시그널이 제공하는 전문적인 B2B 교육 및 유학 파이프라인을 확인하세요.

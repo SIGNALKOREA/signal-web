@@ -28,10 +28,11 @@ export default function Home() {
             </span>
           </div>
           
-          {/* 모바일에서도 무조건 줄바꿈이 되도록 <br /> 태그의 숨김 클래스(hidden md:block)를 제거했습니다. */}
-          <h1 className="text-3xl sm:text-4xl md:text-[5rem] font-black tracking-tighter leading-[1.3] md:leading-[1.1] mb-6 md:mb-8 text-white">
-            한국 유학의 새로운 기준, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">
+          
+         {/* 모바일 폰트를 text-4xl로 크게 키우고, break-keep을 넣어 단어가 예쁘게 떨어지게 합니다. */}
+          <h1 className="text-4xl sm:text-5xl md:text-[5rem] font-black tracking-tighter leading-[1.3] md:leading-[1.1] mb-6 md:mb-8 text-white break-keep">
+            <span className="block">한국 유학의 새로운 기준,</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300 mt-2 md:mt-4">
               시그널이 만듭니다.
             </span>
           </h1>

@@ -11,9 +11,12 @@ export default function AboutPage() {
           <span className="text-blue-400 font-bold tracking-widest text-xs md:text-sm uppercase mb-4 block">
             About SIGNAL.KOREA
           </span>
-          <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-[1.1] mb-6 drop-shadow-lg">
-            신뢰할 수 있는 글로벌 교육의 <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400">새로운 기준</span>
+          {/* 변경됨: 모바일에서는 block을 통해 '새로운 기준'이 무조건 한 줄을 다 차지하도록 분리 */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tighter leading-[1.3] md:leading-[1.1] mb-6 drop-shadow-lg break-keep">
+            <span className="block">신뢰할 수 있는 글로벌 교육의</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400 mt-2 md:mt-4">
+              새로운 기준
+            </span>
           </h1>
           <p className="text-slate-300 font-light text-lg md:text-xl max-w-2xl mx-auto break-keep leading-relaxed">
             대학 교육 현장의 전문성과 독보적인 에듀테크 기술력으로 가장 완벽한 한국 유학 파이프라인을 구축합니다.

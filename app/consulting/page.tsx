@@ -11,9 +11,11 @@ export default function ConsultingPage() {
           <span className="text-blue-400 font-bold tracking-widest text-xs md:text-sm uppercase mb-4 block">
             End-to-End Consulting
           </span>
-          <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-[1.1] mb-6 drop-shadow-lg">
-            파트너 기관을 위한 <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400">올인원 유학 솔루션</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tighter leading-[1.3] md:leading-[1.1] mb-6 drop-shadow-lg break-keep">
+            <span className="block">파트너 기관을 위한</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400 mt-2 md:mt-4">
+              올인원 유학 솔루션
+            </span>
           </h1>
           <p className="text-slate-300 font-light text-lg md:text-xl max-w-2xl mx-auto break-keep leading-relaxed">
             복잡한 비자 수속부터 입국 후 현장 밀착 케어까지, 파트너 기관은 학생 모집에만 집중하십시오. 나머지는 시그널이 완벽하게 책임집니다.
