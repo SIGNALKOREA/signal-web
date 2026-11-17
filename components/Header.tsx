@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image"; // Next.js 이미지 최적화
 
 export default function Header() {
   // 모바일 메뉴 열림/닫힘 상태 관리
@@ -21,8 +20,8 @@ export default function Header() {
 
 감사합니다.`);
 
-  // 100% 확실하게 열리는 지메일 웹(Web) 전용 링크 방식
-  const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${emailSubject}&body=${emailBody}`;
+  // 스마트폰에 설치된 메일 앱(삼성메일, 애플메일, 지메일 앱 등)을 로그인 없이 즉시 여는 글로벌 표준 방식
+  const mailtoLink = `mailto:${emailAddress}?subject=${emailSubject}&body=${emailBody}`;
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
@@ -49,8 +48,6 @@ export default function Header() {
         <div className="hidden md:flex items-center">
           <a 
             href={mailtoLink}
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-bold px-6 py-2.5 bg-blue-600 text-white rounded-xl hover:bg-blue-700 hover:-translate-y-0.5 transition-all shadow-md"
           >
             파트너십 문의
@@ -84,8 +81,6 @@ export default function Header() {
           <div className="pt-2 border-t border-gray-100">
             <a 
               href={mailtoLink}
-              target="_blank"
-              rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
               className="flex justify-center items-center w-full text-base font-bold py-3.5 bg-blue-600 text-white rounded-xl shadow-md active:bg-blue-700"
             >
