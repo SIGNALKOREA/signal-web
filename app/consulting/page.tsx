@@ -12,7 +12,7 @@ export default function ConsultingPage() {
             End-to-End Consulting
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tighter leading-[1.3] md:leading-[1.1] mb-6 drop-shadow-lg break-keep">
-            <span className="block">파트너 기관을 위한</span>
+            {/* <span className="block">파트너 기관을 위한</span> */}
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400 mt-2 md:mt-4">
               올인원 유학 솔루션
             </span>
@@ -29,7 +29,6 @@ export default function ConsultingPage() {
         <section>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-4">왜 SIGNAL.KOREA 인가?</h2>
-            {/* 수정됨: '대학 국제처 실무 경험' -> '다년간의 대학 어학당 및 국제처 현장 실무 경험' */}
             <p className="text-gray-500 font-light text-lg max-w-2xl mx-auto break-keep">
               다년간의 대학 어학당 및 국제처 현장 실무 경험을 바탕으로 구축한 압도적인 3대 경쟁력
             </p>
@@ -73,7 +72,6 @@ export default function ConsultingPage() {
 
         {/* 3. B2B 파트너십 수속 프로세스 (Timeline UI) */}
         <section className="bg-slate-900 rounded-[2.5rem] p-10 md:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.12)] relative overflow-hidden">
-          {/* 장식용 다크 모드 배경 효과 */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-[100px] opacity-20 -z-10"></div>
           
           <div className="text-center mb-16 relative z-10">
@@ -82,11 +80,9 @@ export default function ConsultingPage() {
           </div>
 
           <div className="relative z-10">
-            {/* 데스크탑 프로세스 연결선 */}
             <div className="hidden md:block absolute top-[4.5rem] left-10 right-10 h-0.5 bg-slate-700/50"></div>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              {/* Step 1 */}
               <div className="relative group">
                 <div className="w-16 h-16 bg-slate-800 border-4 border-slate-900 text-blue-400 rounded-2xl flex items-center justify-center font-black text-2xl mx-auto mb-6 relative z-10 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-lg">1</div>
                 <div className="text-center">
@@ -94,7 +90,6 @@ export default function ConsultingPage() {
                   <p className="text-sm text-slate-400 font-light break-keep leading-relaxed">MOU 및 에이전시 계약 체결<br/>모집 요강 및 대학 리스트 공유</p>
                 </div>
               </div>
-              {/* Step 2 */}
               <div className="relative group">
                 <div className="w-16 h-16 bg-slate-800 border-4 border-slate-900 text-blue-400 rounded-2xl flex items-center justify-center font-black text-2xl mx-auto mb-6 relative z-10 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-lg">2</div>
                 <div className="text-center">
@@ -102,7 +97,6 @@ export default function ConsultingPage() {
                   <p className="text-sm text-slate-400 font-light break-keep leading-relaxed">현지 기관 학생 상담 및 모집<br/>시그널 서류 검수 및 공증 지원</p>
                 </div>
               </div>
-              {/* Step 3 */}
               <div className="relative group">
                 <div className="w-16 h-16 bg-slate-800 border-4 border-slate-900 text-blue-400 rounded-2xl flex items-center justify-center font-black text-2xl mx-auto mb-6 relative z-10 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-lg">3</div>
                 <div className="text-center">
@@ -110,22 +104,70 @@ export default function ConsultingPage() {
                   <p className="text-sm text-slate-400 font-light break-keep leading-relaxed">대학 지원 및 인보이스 발행<br/>표준입학허가서 수령 및 비자 신청</p>
                 </div>
               </div>
-              {/* Step 4 */}
               <div className="relative group">
                 <div className="w-16 h-16 bg-slate-800 border-4 border-slate-900 text-blue-400 rounded-2xl flex items-center justify-center font-black text-2xl mx-auto mb-6 relative z-10 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-lg">4</div>
                 <div className="text-center">
                   <h4 className="font-bold text-white text-xl mb-3">입국 & 사후 관리</h4>
-                  <p className="text-sm text-slate-400 font-light break-keep leading-relaxed">입국 전 OT 및 공항 픽업 동행<br/>대학 생활 모니터링 및 진학 상담</p>
+                  <p className="text-sm text-slate-400 font-light break-keep leading-relaxed">입국 전 OT 및 공항 픽업 동행<br/>초기 정착 밀착 케어 지원</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 4. 현지 정착 케어 서비스 (Settlement Care Grid) */}
+        {/* 4. 유학생 맞춤 코칭 & 진학 케어 로드맵 */}
+        <section className="bg-white rounded-[2.5rem] p-10 md:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 mt-12">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-4">유학 생활 성공을 위한 맞춤 코칭 로드맵</h2>
+            <p className="text-gray-500 font-light text-lg">단순한 입학을 넘어, 어학당부터 학부/석사 진학까지 책임지는 시그널만의 1:1 진로 코칭</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Step 1: 어학당 적응 코칭 */}
+            <div className="border border-blue-100 bg-blue-50/30 rounded-3xl p-8 hover:bg-blue-50 transition-colors duration-300">
+              <div className="w-14 h-14 bg-white text-blue-600 rounded-2xl flex items-center justify-center shadow-sm mb-6 border border-blue-100">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">어학당 적응 & 성적 관리</h3>
+              <ul className="space-y-2 text-gray-600 text-sm font-light leading-relaxed">
+                <li className="flex items-start"><span className="text-blue-500 mr-2">✔</span> 출석률 및 중간/기말 성적 모니터링</li>
+                <li className="flex items-start"><span className="text-blue-500 mr-2">✔</span> 학업 부진 학생 1:1 면담 및 동기 부여</li>
+                <li className="flex items-start"><span className="text-blue-500 mr-2">✔</span> 자체 에듀테크 앱 활용 TOPIK 단기 집중 코칭</li>
+              </ul>
+            </div>
+
+            {/* Step 2: 대학 진학 컨설팅 */}
+            <div className="border border-indigo-100 bg-indigo-50/30 rounded-3xl p-8 hover:bg-indigo-50 transition-colors duration-300">
+              <div className="w-14 h-14 bg-white text-indigo-600 rounded-2xl flex items-center justify-center shadow-sm mb-6 border border-indigo-100">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m3-4h1m-1 4h1m-5 8h8"></path></svg>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">학부 & 석사 진학 컨설팅</h3>
+              <ul className="space-y-2 text-gray-600 text-sm font-light leading-relaxed">
+                <li className="flex items-start"><span className="text-indigo-500 mr-2">✔</span> 학생의 적성 및 목표에 맞춘 최적의 전공/대학 추천</li>
+                <li className="flex items-start"><span className="text-indigo-500 mr-2">✔</span> 대학별 외국인 특별전형 입학 요강 분석 및 서류 준비</li>
+                <li className="flex items-start"><span className="text-indigo-500 mr-2">✔</span> 자기소개서, 학업계획서 첨삭 및 실전 모의 면접 지도</li>
+              </ul>
+            </div>
+
+            {/* Step 3: 생활 및 진로 케어 */}
+            <div className="border border-teal-100 bg-teal-50/30 rounded-3xl p-8 hover:bg-teal-50 transition-colors duration-300">
+              <div className="w-14 h-14 bg-white text-teal-600 rounded-2xl flex items-center justify-center shadow-sm mb-6 border border-teal-100">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">유학 생활 멘토링 & 진로 설계</h3>
+              <ul className="space-y-2 text-gray-600 text-sm font-light leading-relaxed">
+                <li className="flex items-start"><span className="text-teal-500 mr-2">✔</span> 향수병, 문화 차이 등 심리적 어려움 극복 멘토링</li>
+                <li className="flex items-start"><span className="text-teal-500 mr-2">✔</span> 합법적인 시간제 취업(아르바이트) 비자 허가 안내</li>
+                <li className="flex items-start"><span className="text-teal-500 mr-2">✔</span> 학위 취득 후 국내 취업(E-7 비자) 및 구직(D-10) 가이드</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* 5. 현지 정착 케어 서비스 (Settlement Care Grid) */}
         <section className="bg-white rounded-[2.5rem] p-10 md:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">
           <div className="mb-12">
-            <h2 className="text-3xl font-black text-slate-900 tracking-tight mb-4">현지 정착 케어 서비스 (Settlement Care)</h2>
+            <h2 className="text-3xl font-black text-slate-900 tracking-tight mb-4">현지 정착 초기 케어 (Settlement Care)</h2>
             <p className="text-gray-500 font-light text-lg">가족의 마음으로 동행하는 시그널만의 프리미엄 인하우스 서비스입니다.</p>
           </div>
           
@@ -173,26 +215,6 @@ export default function ConsultingPage() {
         </section>
 
       </main>
-
-      {/* 5. 초대형 파트너십 CTA 배너 */}
-      <section className="max-w-6xl mx-auto px-6 mt-24">
-        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-900 rounded-[2.5rem] p-12 md:p-16 text-center text-white shadow-[0_20px_40px_rgb(37,99,235,0.25)] relative overflow-hidden">
-          {/* 하이엔드 빛 번짐 이펙트 */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-400 opacity-20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"></div>
-          
-          <div className="relative z-10">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">안정적인 유학생 송출 파이프라인을 원하시나요?</h2>
-            <p className="text-blue-100 font-light text-lg md:text-xl mb-10 max-w-2xl mx-auto break-keep leading-relaxed">
-              시그널과의 업무 협약을 통해 유학생 이탈률을 낮추고 현지 비즈니스 수익을 극대화하십시오. 파트너 등록 절차 및 에이전트 수수료 정책을 투명하게 안내해 드립니다.
-            </p>
-            <button className="px-10 py-5 bg-white text-blue-700 font-bold rounded-2xl text-lg hover:bg-gray-50 hover:-translate-y-1 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.1)]">
-              에이전트 제휴 안내서 요청
-            </button>
-          </div>
-        </div>
-      </section>
-
     </div>
   );
 }

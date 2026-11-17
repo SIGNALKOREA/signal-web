@@ -37,11 +37,11 @@ export default function Home() {
             </span>
           </h1>
           
-          <p className="text-base sm:text-lg md:text-2xl text-slate-200 font-light mb-8 md:mb-12 max-w-3xl mx-auto break-keep leading-relaxed">
-            해외 기관과의 견고한 파트너십을 통해 단기 연수, 어학당 진학, 그리고 자체 TOPIK 솔루션까지 완벽한 B2B 교육 파이프라인을 제공합니다.
+         <p className="text-base sm:text-lg md:text-2xl text-slate-200 font-light mb-8 md:mb-12 max-w-3xl mx-auto break-keep leading-relaxed">
+            해외 기관과의 견고한 파트너십을 통해 단기 연수, 어학당 및 학부·석사 진학 연계, 자체 TOPIK 솔루션부터 유학 생활 성공을 위한 맞춤 코칭까지 완벽한 B2B 교육 파이프라인을 제공합니다.
           </p>
           
-          {/* 모바일에서는 버튼 크기와 둥글기(rounded-xl)도 살짝 줄여서 화면 비율에 맞춤 */}
+          {/* 모바일에서는 버튼 크기와 둥글기(rounded-xl)도 살짝 줄여서 화면 비율에 맞춤
           <div className="flex flex-col sm:flex-row justify-center items-center gap-3 md:gap-4">
             <Link href="/consulting" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-blue-600 text-white rounded-xl md:rounded-2xl font-bold text-base md:text-lg hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300 shadow-lg border border-blue-500">
               비즈니스 협력 제안
@@ -49,7 +49,7 @@ export default function Home() {
             <Link href="/about" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-white/10 text-white rounded-xl md:rounded-2xl font-bold text-base md:text-lg border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300">
               회사 소개서 보기
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -107,23 +107,21 @@ export default function Home() {
             {/* 비즈니스 1: 유학원 (가장 큰 강조 영역) */}
             {/* 수정됨: 모바일 패딩 축소(p-8), 둥글기 축소(rounded-[2rem]) */}
             <div className="md:col-span-2 md:row-span-2 bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-14 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col justify-between group hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-1.5 transition-all duration-500 relative overflow-hidden cursor-pointer">
-              <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-gradient-to-bl from-blue-50 via-white to-transparent opacity-50 rounded-full blur-3xl -z-10 group-hover:from-blue-100 transition-colors duration-700"></div>
-              
               <div className="relative z-10">
-                {/* 수정됨: 모바일 아이콘 크기 축소 (w-12 h-12) */}
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-600 rounded-2xl flex justify-center items-center text-white mb-6 md:mb-8 shadow-lg shadow-blue-600/30">
                   <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m3-4h1m-1 4h1m-5 8h8"></path></svg>
                 </div>
-                {/* 수정됨: 모바일 폰트 크기 축소 (text-3xl) 및 줄간격 확보 */}
-                <h3 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 tracking-tight text-slate-900 leading-[1.2] md:leading-[1.15]">유학원 운영 &<br/>대학 진학 다이렉트 연계</h3>
+                {/* 타이틀에 학위 진학 및 코칭 추가 */}
+                <h3 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 tracking-tight text-slate-900 leading-[1.2] md:leading-[1.15]">유학원 운영 &<br/>학위 진학·코칭 관리</h3>
                 <p className="text-gray-500 font-light text-base md:text-lg max-w-md break-keep leading-relaxed">
-                  국내 주요 4년제 대학 어학당 및 학부 입학을 위한 서류 심사, 비자 발급, 입학까지의 모든 과정을 완벽하게 지원합니다. 현장 경험이 풍부한 어학당 주임강사급 전문가가 다이렉트로 관리합니다.
+                  국내 주요 대학 어학당부터 학부, 석사 입학을 위한 까다로운 비자 발급과 행정을 완벽하게 대행하며, 유학 생활 성공을 위한 현지 맞춤 코칭 프로그램까지 다이렉트로 제공합니다.
                 </p>
               </div>
               
-              <div className="relative z-10 flex items-center text-blue-600 font-bold text-base md:text-lg group-hover:translate-x-2 transition-transform w-max mt-8">
-                협력 모델 알아보기 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-              </div>
+              {/* 단순 div에서 클릭 가능한 Link로 변경하여 컨설팅 페이지로 유도 */}
+              <Link href="/consulting" className="relative z-10 flex items-center text-blue-600 font-bold text-base md:text-lg group-hover:translate-x-2 transition-transform w-max mt-8">
+                파트너십 프로세스 알아보기 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+              </Link>
             </div>
 
             {/* 비즈니스 2: 단기 연수 */}

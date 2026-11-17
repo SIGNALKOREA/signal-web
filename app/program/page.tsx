@@ -12,13 +12,13 @@ export default function ProgramPage() {
             Premium Curriculum
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tighter leading-[1.3] md:leading-[1.1] mb-6 drop-shadow-lg break-keep">
-            <span className="block">글로벌 파트너를 위한</span>
+            {/* <span className="block">글로벌 파트너를 위한</span> */}
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400 mt-2 md:mt-4">
               최상위 교육 프로그램
             </span>
           </h1>
           <p className="text-slate-300 font-light text-lg md:text-xl max-w-2xl mx-auto break-keep leading-relaxed">
-            기관의 니즈에 맞춘 100% 맞춤형 단기 연수부터 대학 진학 연계 정규 과정까지, 체계적인 K-에듀 커리큘럼을 제공합니다.
+            기관의 니즈에 완벽히 부합하는 100% 수요 맞춤형 단기 연수 및 프리미엄 K-에듀 문화 캠프를 기획하고 운영합니다.
           </p>
         </div>
       </section>
@@ -57,8 +57,8 @@ export default function ProgramPage() {
                     <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900">맞춤형 커리큘럼</h4>
-                    <p className="text-sm text-gray-500 font-light mt-1">파트너 기관의 예산과 목적에 완벽히 부합하는 일정 조율</p>
+                    <h4 className="font-bold text-slate-900">수요 맞춤형 기획</h4>
+                    <p className="text-sm text-gray-500 font-light mt-1">파트너 기관의 예산, 기간, 목표에 완벽히 부합하는 유연한 일정 조율</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -73,7 +73,7 @@ export default function ProgramPage() {
               </div>
             </div>
             
-            {/* 오른쪽: 수정된 하이엔드 테이블 UI */}
+            {/* 오른쪽: 하이엔드 테이블 UI */}
             <div className="lg:col-span-8">
               <h4 className="font-bold text-slate-900 mb-4 flex items-center">
                 <svg className="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
@@ -101,7 +101,6 @@ export default function ProgramPage() {
                           <span className="text-[11px] text-gray-400">09:00-13:00</span>
                         </td>
                         <td className="px-4 py-5 text-gray-600 leading-relaxed">오리엔테이션<br/>레벨 테스트</td>
-                        {/* <td> 태그가 아닌 그 안의 <div>를 둥글게 만들어 테이블 레이아웃을 보호합니다. */}
                         <td className="px-4 py-5"><div className="bg-blue-50 text-blue-600 font-bold py-2 px-1 rounded-xl shadow-sm border border-blue-100/50">한국어 회화 1</div></td>
                         <td className="px-4 py-5"><div className="bg-blue-50 text-blue-600 font-bold py-2 px-1 rounded-xl shadow-sm border border-blue-100/50">한국어 회화 2</div></td>
                         <td className="px-4 py-5"><div className="bg-blue-50 text-blue-600 font-bold py-2 px-1 rounded-xl shadow-sm border border-blue-100/50">한국어 회화 3</div></td>
@@ -131,56 +130,95 @@ export default function ProgramPage() {
           </div>
         </section>
 
-        {/* 3. 정규 과정 (Regular Course) */}
+        {/* 3. 대학 탐방, 문화 체험 & 맞춤형 특화 프로그램 */}
         <section>
           <div className="mb-10 text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">대학 진학 연계 정규 과정</h2>
-            <p className="text-gray-500 font-light text-lg mt-3">10주 ~ 40주 장기 플랜 / 연 4학기제 운영</p>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">명문대 탐방 & 문화·특화 프로그램</h2>
+            <p className="text-gray-500 font-light text-lg mt-3">단순 관광을 넘어선 인사이트 제공과 수요자 맞춤형 전문 투어 기획</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            {/* 정규 1: 어학당 다이렉트 */}
+            {/* 프로그램 1: 캠퍼스 투어 */}
             <div className="bg-white border border-gray-100 p-10 md:p-12 rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] group hover:shadow-[0_20px_40px_rgb(0,0,0,0.06)] hover:-translate-y-1.5 transition-all duration-500 cursor-default">
               <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8">
-                <span className="font-black text-2xl">01</span>
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m3-4h1m-1 4h1m-5 8h8"></path></svg>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-slate-900">어학당 직통 연계반</h3>
+              <h3 className="text-2xl font-bold mb-4 text-slate-900">명문대 캠퍼스 투어</h3>
               <p className="text-gray-500 font-light mb-8 break-keep leading-relaxed h-20">
-                제휴를 맺은 국내 주요 4년제 대학교 국제교육원(어학당)으로 서류 심사부터 비자 발급, 입학까지 다이렉트로 안전하게 진행되는 패스트트랙 프로그램입니다.
+                SKY 등 국내 주요 대학 캠퍼스를 직접 방문하여 선진화된 교육 시설을 탐방하고, 재학생 멘토링을 통해 실질적인 유학 생활 간접 체험을 제공합니다.
               </p>
               
               <div className="space-y-3 pt-6 border-t border-gray-100">
                 <div className="flex items-center text-sm font-medium text-slate-700">
                   <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center mr-3"><svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg></div>
-                  1급(초급) ~ 6급(최고급) 수준별 완벽 분반
+                  주요 대학 어학당 및 시설 견학 코스 편성
                 </div>
                 <div className="flex items-center text-sm font-medium text-slate-700">
                   <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center mr-3"><svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg></div>
-                  출석률 및 학업 성취도 미달 학생 밀착 관리 시스템
+                  유학 동기 부여 및 학업 비전 설계 특강
                 </div>
               </div>
             </div>
             
-            {/* 정규 2: 학부 진학 */}
+            {/* 프로그램 2: K-컬처 체험 */}
             <div className="bg-slate-900 border border-slate-800 p-10 md:p-12 rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] group hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] hover:-translate-y-1.5 transition-all duration-500 cursor-default relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500 rounded-full blur-3xl opacity-20 -z-10"></div>
               <div className="w-16 h-16 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-2xl flex items-center justify-center mb-8">
-                <span className="font-black text-2xl">02</span>
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">학부 진학 & TOPIK 집중반</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">프리미엄 K-Culture 트립</h3>
               <p className="text-slate-400 font-light mb-8 break-keep leading-relaxed h-20">
-                한국 대학 학부 및 대학원 입학을 목표로 하는 학생을 위한 특수 목적 과정입니다. 입학 필수 조건인 TOPIK 단기 고득점 획득에 모든 인프라를 집중합니다.
+                경복궁, 한옥마을 등 전통문화 체험부터 K-POP 댄스 클래스, 유명 방송국 투어 등 트렌디한 한류 문화를 안전하고 깊이 있게 즐기는 스페셜 세션입니다.
               </p>
               
               <div className="space-y-3 pt-6 border-t border-slate-700/50">
                 <div className="flex items-center text-sm font-medium text-slate-300">
                   <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3"><svg className="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg></div>
-                  시그널 자체 TOPIK 모바일 앱 연동 기출 훈련
+                  원하는 문화 테마(역사, 뷰티, 팝) 전면 반영 기획
                 </div>
                 <div className="flex items-center text-sm font-medium text-slate-300">
                   <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3"><svg className="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg></div>
-                  진학용 자기소개서, 학업계획서 및 모의 면접 지도
+                  전담 가이드 밀착 동행으로 100% 안전 보장
+                </div>
+              </div>
+            </div>
+
+            {/* 프로그램 3: 수요자 맞춤형 특화 프로그램 (추가된 영역) */}
+            <div className="md:col-span-2 bg-gradient-to-r from-blue-50/50 to-indigo-50/50 border border-blue-100 p-10 md:p-12 rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.03)] group hover:shadow-[0_20px_40px_rgb(0,0,0,0.06)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col md:flex-row items-center gap-10 md:gap-16 relative overflow-hidden">
+              <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-400 rounded-full blur-[100px] opacity-20 -z-10 group-hover:opacity-30 transition-opacity"></div>
+              
+              <div className="md:w-1/2">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-blue-600/20">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-slate-900 tracking-tight">수요자 맞춤형 특화 프로그램</h3>
+                <p className="text-gray-600 font-light break-keep leading-relaxed text-lg">
+                  참여 기관의 방문 목적과 연수생들의 세부 니즈에 맞춰 100% 커스터마이징되는 스페셜 트랙입니다. 단순한 견학을 넘어 목적에 부합하는 전문적인 교육 일정을 기획합니다.
+                </p>
+              </div>
+
+              <div className="md:w-1/2 w-full space-y-4">
+                <div className="bg-white/80 backdrop-blur-sm border border-white p-5 rounded-2xl flex items-center shadow-sm hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-2xl mr-4 shrink-0">🏢</div>
+                  <div>
+                    <h4 className="font-bold text-slate-800">국내 주요 기업 및 산업 현장 탐방</h4>
+                    <p className="text-sm text-gray-500 mt-1">IT, 자동차, 엔터테인먼트 등 희망 산업군 시찰</p>
+                  </div>
+                </div>
+                <div className="bg-white/80 backdrop-blur-sm border border-white p-5 rounded-2xl flex items-center shadow-sm hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-2xl mr-4 shrink-0">👩‍🍳</div>
+                  <div>
+                    <h4 className="font-bold text-slate-800">한국 요리 (K-Food) 특화</h4>
+                    <p className="text-sm text-gray-500 mt-1">전문 셰프 및 명인과 함께하는 쿠킹 클래스</p>
+                  </div>
+                </div>
+                <div className="bg-white/80 backdrop-blur-sm border border-white p-5 rounded-2xl flex items-center shadow-sm hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-2xl mr-4 shrink-0">🎤</div>
+                  <div>
+                    <h4 className="font-bold text-slate-800">K-POP 보컬 & 댄스 특화</h4>
+                    <p className="text-sm text-gray-500 mt-1">전문 스튜디오 연계 트레이닝 및 오디션 체험</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -189,26 +227,6 @@ export default function ProgramPage() {
         </section>
 
       </main>
-
-     {/* 4. 초대형 맞춤 기획 CTA */}
-        <section className="max-w-6xl mx-auto px-6 mt-24">
-          <div className="bg-white rounded-[2.5rem] p-12 md:p-16 border border-gray-200 flex flex-col md:flex-row items-center justify-between shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative overflow-hidden">
-            <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-blue-50 rounded-full blur-3xl opacity-70 -z-10"></div>
-            
-            <div className="md:w-2/3 mb-8 md:mb-0">
-              <h3 className="text-3xl md:text-4xl font-black text-slate-900 mb-4 tracking-tight">기관 맞춤형 프로그램 기획이 필요하신가요?</h3>
-              
-              {/* 수정됨: '대학 어학당 실무 경력을 갖춘' -> '다년간의 대학 어학당 실무 경험을 갖춘' 으로 통일성 부여 */}
-              <p className="text-gray-500 font-light text-lg break-keep leading-relaxed">
-                참여 인원, 원하는 기간, 가용 예산을 남겨주세요. <br className="hidden md:block"/> 다년간의 대학 어학당 실무 경험을 갖춘 시그널의 교육 전문가가 최적의 커리큘럼안을 24시간 내에 제안해 드립니다.
-              </p>
-            </div>
-            <button className="w-full md:w-auto px-10 py-5 bg-slate-900 text-white font-bold rounded-2xl text-lg hover:bg-slate-800 hover:-translate-y-1 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.12)] whitespace-nowrap">
-              프로그램 제안서 요청
-            </button>
-          </div>
-        </section>
-
     </div>
   );
 }

@@ -11,11 +11,10 @@ export default function AboutPage() {
           <span className="text-blue-400 font-bold tracking-widest text-xs md:text-sm uppercase mb-4 block">
             About SIGNAL.KOREA
           </span>
-          {/* 변경됨: 모바일에서는 block을 통해 '새로운 기준'이 무조건 한 줄을 다 차지하도록 분리 */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tighter leading-[1.3] md:leading-[1.1] mb-6 drop-shadow-lg break-keep">
-            <span className="block">신뢰할 수 있는 글로벌 교육의</span>
+            {/* <span className="block">신뢰할 수 있는 글로벌 교육의</span> */}
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400 mt-2 md:mt-4">
-              새로운 기준
+              글로벌 교육의 새로운 기준
             </span>
           </h1>
           <p className="text-slate-300 font-light text-lg md:text-xl max-w-2xl mx-auto break-keep leading-relaxed">
@@ -26,7 +25,7 @@ export default function AboutPage() {
 
       <main className="max-w-6xl mx-auto px-6 -mt-10 relative z-20 space-y-12">
         
-        {/* 2. 하이엔드 CEO 메시지 (초대형 캔버스 UI) */}
+        {/* 2. 전문가 그룹 메시지 (초대형 캔버스 UI) */}
         <section>
           <div className="bg-white rounded-[2.5rem] p-10 md:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 relative overflow-hidden group hover:shadow-[0_20px_40px_rgb(0,0,0,0.06)] transition-all duration-500">
             {/* 장식용 배경 블러 효과 */}
@@ -34,37 +33,53 @@ export default function AboutPage() {
             
             <div className="relative z-10 flex flex-col md:flex-row gap-12 md:gap-20">
               
-              {/* 왼쪽: 핵심 철학 및 프로필 */}
+              {/* 왼쪽: 핵심 철학 및 전문가 그룹 프로필 (수정된 영역) */}
               <div className="md:w-5/12 flex flex-col justify-between">
                 <div>
-                  <svg className="w-12 h-12 text-blue-600 mb-6 opacity-80" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                  <p className="text-2xl md:text-3xl font-black text-slate-900 leading-[1.4] tracking-tight break-keep mb-8">
+                  {/* 따옴표 아이콘 크기와 색상을 텍스트와 조화롭게 조정 */}
+                  <svg className="w-10 h-10 text-blue-300 mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                  <p className="text-2xl md:text-[1.7rem] font-black text-slate-900 leading-[1.4] tracking-tight break-keep mb-8">
                     "한국어 교육의 본질은 언어를 넘어, 세계의 인재들과 <span className="text-blue-600">견고한 다리</span>를 놓는 것입니다."
                   </p>
                 </div>
-                <div>
-                  <p className="text-sm font-bold tracking-widest text-gray-400 uppercase mb-1">Chief Executive Officer</p>
-                  <p className="text-xl font-black text-slate-900">허 신 영 <span className="text-base font-medium text-gray-500 ml-2">Sinyoung Her</span></p>
+                
+                {/* 💡 개선된 하단 전문가 그룹 명함(프로필) UI */}
+                <div className="mt-4 p-5 md:p-6 bg-slate-50/80 rounded-2xl border border-gray-100 flex flex-col items-start">
+                  <span className="text-[11px] font-extrabold tracking-widest text-gray-400 uppercase mb-2">
+                    Education Experts Group
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-black text-slate-900 break-keep leading-snug">
+                    15년 이상 경력의<br className="hidden md:block"/> 현직 대학 실무진
+                  </h3>
+                  
+                  {/* 강제 줄바꿈 방지 및 프리미엄 뱃지 스타일 적용 */}
+                  <div className="mt-4 inline-flex items-center px-3 py-1.5 bg-white text-blue-600 text-sm font-bold rounded-lg border border-gray-200 shadow-sm whitespace-nowrap">
+                    <span className="flex h-2 w-2 relative mr-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-300 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    전 과정 직접 기획 및 운영
+                  </div>
                 </div>
               </div>
 
-              {/* 오른쪽: CEO 인사말 본문 */}
+              {/* 오른쪽: 전문가 그룹 인사말 본문 */}
               <div className="md:w-7/12 text-gray-500 font-light text-base md:text-lg leading-loose break-keep space-y-6">
                 <p>
-                  15년 이상 한국어 교육에 몸담고, 대학 어학당 주임강사로서 다년간 교육 현장을 직접 지휘하며 얻은 결론은 하나입니다. 글로벌 교육 기관들이 한국 유학 파이프라인을 구축할 때 가장 필요한 것은 단순한 행정 대행이 아니라, <strong className="font-semibold text-slate-800">현장을 이해하는 진짜 전문가의 개입</strong>이라는 것입니다.
+                  15년 이상 한국어 교육에 몸담아온 대학 어학당 주임강사 및 국제처 실무진들이 다년간 현장을 직접 지휘하며 얻은 결론은 하나입니다. 글로벌 교육 기관들이 한국 유학 파이프라인을 구축할 때 가장 필요한 것은 단순한 행정 대행이나 에이전시가 아닌, <strong className="font-semibold text-slate-800">현장을 이해하는 진짜 전문가의 개입</strong>이라는 것입니다.
                 </p>
                 <p>
-                  SIGNAL.KOREA는 유학 알선을 넘어 현장 중심의 전문적인 커리큘럼 설계, 주요 4년제 대학 다이렉트 진학 연계, 그리고 자체 개발한 에듀테크 기반 TOPIK 솔루션까지 통합적으로 제공하는 B2B 전문 교육 파트너입니다.
+                  SIGNAL.KOREA는 단순 유학 알선을 넘어 현장 중심의 맞춤형 단기 연수 기획, 주요 4년제 대학 어학당 및 학위 과정 다이렉트 진학 연계, 그리고 자체 개발한 에듀테크 웹 기반 학습 솔루션까지 통합적으로 제공하는 B2B 전문 교육 파트너입니다.
                 </p>
                 <p>
-                  귀 기관의 학생들이 한국에서 가장 안전하고 성공적으로 학업을 성취할 수 있도록, 시그널이 가장 완벽하고 신뢰할 수 있는 베이스캠프가 되어 드리겠습니다.
+                  귀 기관의 학생들이 한국에서 가장 안전하게 적응하고 성공적으로 학업 목표를 성취할 수 있도록, 시그널의 현직 교육 전문가들이 가장 완벽하고 신뢰할 수 있는 멘토이자 베이스캠프가 되어 드리겠습니다.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 3. 비전 & 미션 (프리미엄 Bento Box 스타일) */}
+        {/* 3. 비전 & 미션 (프리미엄 Bento Box 스타일 - 인포그래픽 용도) */}
         <section className="pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
