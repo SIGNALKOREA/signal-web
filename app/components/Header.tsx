@@ -120,10 +120,11 @@ export default function Header() {
     { code: "ko", label: "한국어" },
     { code: "en", label: "English" },
     { code: "zh", label: "中文" },
+    { code: "ja", label: "日本語" },
+    { code: "fr", label: "Français" },
     { code: "vi", label: "Tiếng Việt" },
     { code: "mn", label: "Монгол" },
-    { code: "ja", label: "日本語" },
-    { code: "fr", label: "Français" }
+    
   ];
 
   const rawSubject = t.has("mailSubject") ? t("mailSubject") : "[SIGNAL.KOREA] Partnership Inquiry";
