@@ -26,6 +26,13 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     type: "website",
   },
+  // 👇 여기부터 추가하시면 됩니다
+  verification: {
+    google: "구글_서치콘솔에서_받은_content값",
+    other: {
+      "naver-site-verification": "네이버_서치어드바이저에서_받은_content값",
+    },
+  },
 };
 
 export default async function RootLayout({
