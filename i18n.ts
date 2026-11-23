@@ -1,7 +1,7 @@
 import { getRequestConfig } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
-const locales = ['ko', 'en', 'zh', 'ja', 'fr', 'vi', 'mn'];
+const locales = ['ko', 'en', 'zh', 'ja', 'fr', 'vi', 'mn', 'th'];
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // 1. 최신 버전은 locale 대신 requestLocale을 Promise 형태로 받아옵니다.

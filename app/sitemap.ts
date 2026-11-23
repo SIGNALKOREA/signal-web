@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://signalkorea.co.kr"; // 예: https://signal-web.vercel.app
-  const locales = ["ko", "en", "zh", "vi", "mn", "ja", "fr"];
+  const locales = ["ko", "en", "zh", "ja", "fr", "vi", "mn", 'th'];
   const routes = ["", "/about", "/business", "/program", "/consulting"];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];

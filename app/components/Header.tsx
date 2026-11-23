@@ -87,6 +87,16 @@ const PC_MODAL_COPY: Record<
     messagePlaceholder: "Холбогдох агуулгаа бичнэ үү.",
     submit: "Илгээх",
     success: "Хүлээн авлаа. Үлдээсэн и-мэйл хаягаар тань холбогдох болно."
+  },
+   th: {
+    title: "ติดต่อเรา",
+    desc: "กรุณาฝากข้อความสอบถามและอีเมลของท่านไว้ เราจะติดต่อกลับโดยเร็ว",
+    emailLabel: "ที่อยู่อีเมล",
+    emailPlaceholder: "name@example.com",
+    messageLabel: "ข้อความสอบถาม",
+    messagePlaceholder: "กรุณากรอกข้อความที่ต้องการสอบถาม",
+    submit: "ส่งข้อความ",
+    success: "ได้รับข้อความแล้ว เราจะติดต่อกลับไปยังอีเมลที่ท่านระบุไว้"
   }
 };
 
@@ -124,6 +134,7 @@ export default function Header() {
     { code: "fr", label: "Français" },
     { code: "vi", label: "Tiếng Việt" },
     { code: "mn", label: "Монгол" },
+    { code: "th", label: "ไทย" },
     
   ];
 
