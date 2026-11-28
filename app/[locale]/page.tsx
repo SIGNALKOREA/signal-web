@@ -26,7 +26,6 @@ export default function Home() {
             </span>
           </div>
           
-          {/* 💡 엄청 컸던 폰트 사이즈를 반응형으로 살짝 줄이고, break-keep을 지워 자동 줄바꿈(break-words) 허용 */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-black tracking-tighter leading-[1.2] md:leading-[1.1] mb-6 md:mb-8 text-white break-words">
             <span className="block">{t("heroTitle1")}</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300 mt-2 md:mt-4">
@@ -34,7 +33,7 @@ export default function Home() {
             </span>
           </h1>
           
-         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-200 font-light mb-8 md:mb-12 max-w-3xl mx-auto break-words leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-200 font-light mb-8 md:mb-12 max-w-3xl mx-auto break-words leading-relaxed">
             {t("heroDesc")}
           </p>
         </div>
@@ -88,7 +87,6 @@ export default function Home() {
             <p className="text-lg md:text-xl text-gray-500 font-light break-words">{t("bizSectionSub")}</p>
           </div>
 
-          {/* 💡 320px 고정을 풀고 최소 높이(min-h)로 변경하여 텍스트 길이에 따라 유연하게 늘어나도록 수정 */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[minmax(320px,auto)]">
             
             <div className="md:col-span-2 md:row-span-2 bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-14 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col justify-between group hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-1.5 transition-all duration-500 relative overflow-hidden cursor-pointer">
@@ -125,17 +123,56 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col justify-between group hover:-translate-y-1.5 hover:shadow-[0_15px_30px_rgb(0,0,0,0.06)] transition-all duration-500 cursor-pointer min-h-[320px]">
-              <div className="h-full flex flex-col">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-indigo-50 rounded-2xl flex justify-center items-center text-indigo-600 mb-5 md:mb-6 shrink-0">
-                  <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+            {/* 3번째 카드: K-Edu / 에듀테크 + K-Quiz Live 바로가기 */}
+            <div className="bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-indigo-100 flex flex-col justify-between group hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(79,70,229,0.12)] transition-all duration-500 min-h-[320px] relative overflow-hidden">
+              <div className="absolute -top-12 -right-12 w-36 h-36 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition-colors duration-500"></div>
+              <div className="relative z-10 h-full flex flex-col">
+                <div className="flex items-center justify-between mb-5 md:mb-6">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-indigo-50 rounded-2xl flex justify-center items-center text-indigo-600 shrink-0">
+                    <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-[10px] font-bold tracking-wider uppercase text-indigo-600">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    LIVE DEMO
+                  </span>
                 </div>
+
                 <h3 className="text-xl md:text-2xl font-bold mb-3 text-slate-900 tracking-tight leading-snug break-words">
                   {t("biz3Title1")} <br/>{t("biz3Title2")}
                 </h3>
-                <p className="text-gray-500 font-light text-sm break-words leading-relaxed flex-grow mt-auto">
+                <p className="text-gray-500 font-light text-sm break-words leading-relaxed flex-grow">
                   {t("biz3Desc")}
                 </p>
+
+                <a
+                  href="https://k-quiz-live-kdbp.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 text-white shadow-md shadow-indigo-500/25 hover:shadow-lg hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-200 group/btn"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-7 h-7 rounded-lg bg-white/15 flex items-center justify-center shrink-0">
+                      <svg className="w-4 h-4 text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13 2L3 14h7l-1 8 10-12h-7l-1-8z" />
+                      </svg>
+                    </div>
+                    <div className="flex flex-col leading-tight text-left">
+                      <span className="text-[10px] font-semibold text-blue-100 uppercase tracking-wider">TOPIK & Quiz</span>
+                      <span className="text-sm font-extrabold">K-Quiz Live</span>
+                    </div>
+                  </div>
+                  <svg
+                    className="w-4 h-4 text-white/90 group-hover/btn:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
               </div>
             </div>
             

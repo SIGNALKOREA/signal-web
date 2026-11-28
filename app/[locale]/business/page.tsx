@@ -102,19 +102,30 @@ export default function BusinessPage() {
           </div>
         </section>
 
-        {/* Business 3: 에듀테크 솔루션 */}
-        <section className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col md:flex-row items-center gap-12 group hover:shadow-[0_20px_40px_rgb(0,0,0,0.06)] transition-all duration-500 overflow-hidden relative">
+        {/* Business 3: 에듀테크 솔루션 + K-Quiz Live 바로가기 */}
+        <section className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-indigo-100 flex flex-col md:flex-row items-center gap-12 group hover:shadow-[0_20px_40px_rgba(79,70,229,0.1)] transition-all duration-500 overflow-hidden relative">
+          <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-indigo-50 rounded-full blur-3xl opacity-60 -z-10"></div>
           <div className="md:w-1/2 relative z-10 w-full">
-            <div className="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 shrink-0">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+            <div className="flex items-center justify-between mb-8">
+              <div className="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center shrink-0">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+              </div>
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-xs font-bold tracking-wider uppercase text-indigo-600">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                LIVE DEMO
+              </span>
             </div>
+
             <h2 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 tracking-tight leading-[1.3] break-words">
               {t("biz3Title1")} <br className="hidden md:block"/>{t("biz3Title2")}
             </h2>
             <p className="text-gray-500 font-light text-lg leading-relaxed break-words mb-8">
               {t("biz3Desc")}
             </p>
-            <ul className="space-y-4 text-slate-700 font-medium text-sm md:text-base w-full">
+            <ul className="space-y-4 text-slate-700 font-medium text-sm md:text-base w-full mb-8">
               <li className="flex items-start break-words w-full">
                 <div className="w-2 h-2 bg-indigo-600 rounded-full mr-4 mt-1.5 shadow-sm shrink-0"></div>
                 <span className="flex-1">{t("biz3List1")}</span>
@@ -128,6 +139,33 @@ export default function BusinessPage() {
                 <span className="flex-1">{t("biz3List3")}</span>
               </li>
             </ul>
+
+            <a
+              href="https://k-quiz-live-kdbp.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-between w-full sm:w-auto sm:min-w-[260px] gap-4 px-5 py-3.5 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-200 group/btn"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+                  </svg>
+                </div>
+                <div className="flex flex-col leading-tight text-left">
+                  <span className="text-[10px] font-semibold text-blue-100 uppercase tracking-wider">TOPIK & Quiz</span>
+                  <span className="text-base font-extrabold">K-Quiz Live</span>
+                </div>
+              </div>
+              <svg
+                className="w-5 h-5 text-white/90 group-hover/btn:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
           </div>
           
           <div 
